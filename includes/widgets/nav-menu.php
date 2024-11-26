@@ -127,10 +127,11 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
                 flex-direction: column;
                 width: 100%;
                 position: absolute;
-                top: 66px;
+                top: 49px;
                 left: 0;
                 z-index: 999;
                 background: #ffffff;
+                transition: all 0.4s;
             }
             #cf-navigation .menu .menu-item a{
                 color:  #010101;
