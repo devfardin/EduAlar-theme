@@ -1,0 +1,13 @@
+.elementor-heading-title span{
+    color: var( --e-global-color-primary )
+}
+
+body:not(.elementor-editor-active) .she-header-yes.she-header {
+    background: #ffff;
+}
+
+/* Scrolling Effice */
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-5935c82.she-header-yes.she-header-hide-on-scroll-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header section.elementor-section.elementor-inner-section.elementor-element.elementor-element-306cabb.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    border: none;
+    padding: 5px;
+}
