@@ -1,13 +1,45 @@
-.elementor-heading-title span{
-    color: var( --e-global-color-primary )
+.elementor-heading-title span {
+  color: var(--e-global-color-primary);
 }
 
 body:not(.elementor-editor-active) .she-header-yes.she-header {
-    background: #ffff;
+  background: #ffff;
 }
 
 /* Scrolling Effice */
-section.elementor-section.elementor-top-section.elementor-element.elementor-element-5935c82.she-header-yes.she-header-hide-on-scroll-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header section.elementor-section.elementor-inner-section.elementor-element.elementor-element-306cabb.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
-    border: none;
-    padding: 5px;
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-5935c82.she-header-yes.she-header-hide-on-scroll-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header
+  section.elementor-section.elementor-inner-section.elementor-element.elementor-element-306cabb.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+  border: none;
+  padding: 5px;
+}
+/* Home page Style  */
+.elementor-column.elementor-col-100.elementor-inner-column.elementor-element.elementor-element-bd88807 {
+  .elementor-widget-wrap.elementor-element-populated {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+}
+.elementor-column.elementor-col-100.elementor-inner-column.elementor-element.elementor-element-7ddb77a.elementor-element-bd88807
+  .elementor-widget-wrap.elementor-element-populated {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.elementor-column.elementor-col-100.elementor-inner-column.elementor-element.elementor-element-7ddb77a
+  .elementor-widget-wrap.elementor-element-populated {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  top: -1097px;
+  right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .elementor-column.elementor-col-100.elementor-inner-column.elementor-element.elementor-element-7ddb77a
+ .elementor-widget-wrap.elementor-element-populated {
+    top: -590px;
+    right: -45px;
+  }
 }

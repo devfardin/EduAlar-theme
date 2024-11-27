@@ -66,14 +66,6 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
         ?>
         <style>
             /** To Fix Navigation width issues on Mobile */
-            /* #cfx-header{
-                position: relative;
-            } */
-            #cfx-header .elementor-column,
-            #cfx-header .elementor-widget-wrap,
-            #cfx-header .elementor-widget{
-                position: static;
-            }
 
             /** Navigation Styles */
             #cf-navigation .menu{
@@ -81,7 +73,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
                 padding: 30px;
                 gap: 15px;
             }
-            @media all and (min-width: 1025px){
+            @media all and (min-width: 1180px){
                 #cf-navigation .menu{
                     display: flex;
                     gap: 30px;
@@ -100,7 +92,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
                 display: flex;
                 justify-content: flex-end;
             }
-            @media all and (min-width: 1025px){
+            @media all and (min-width: 1180px){
                 #cf-navigation #btn--mobile-menu-trigger{
                     display: none;
                 }
@@ -184,7 +176,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
             #cf-navigation .menu-item.show--sub-menu .sub-menu{
                 display: flex;
             }
-			@media all and (min-width: 1025px){
+			@media all and (min-width: 1180px){
                 .header_btn{
                     display:none !important;
                 }
@@ -203,7 +195,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
                 background: #85B303;                
             }
 			
-            @media all and (min-width: 1025px){
+            @media all and (min-width: 1180px){
                 #cf-navigation .menu-item.show--sub-menu .sub-menu{
                     position: absolute;
                     top: 73px;
