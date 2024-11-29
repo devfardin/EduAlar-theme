@@ -43,3 +43,26 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     right: -45px;
   }
 }
+.hero_heading{
+    position: relative;
+}
+.hero_heading::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/shape-4.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 21px;
+    left: 50%;
+    bottom: -26px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/* Tutor lms button style */
+.tutor-btn.tutor-btn-outline-primary.tutor-btn-md.tutor-btn-block {
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
