@@ -60,9 +60,24 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-/* Tutor lms button style */
+section.elementor-section.elementor-inner-section.elementor-element .courses_categories.elementor-section-boxed{
+  transition: 0.4s;
+}
+section.elementor-section.elementor-inner-section.elementor-element .courses_categories.elementor-section-boxed:hover{
+  transform: translateY(-7px);
+}
+/* Tutor lms style */
 .tutor-btn.tutor-btn-outline-primary.tutor-btn-md.tutor-btn-block {
   padding: 14px 0;
   font-size: 18px;
   font-weight: 500;
+}
+.tutor-course-name a{
+  transition: 0.4s;
+}
+.tutor-course-name a:hover{
+  color: var(--e-global-color-primary) !important;
+}
+input:focus{
+  color: black !important;
 }
