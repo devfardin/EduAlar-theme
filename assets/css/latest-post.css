@@ -1,0 +1,7 @@
+.latest-posts__empty_mesage{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--e-global-color-primary) !important;
+    font-weight: 500;
+}
