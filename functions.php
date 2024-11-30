@@ -10,9 +10,19 @@ function baitu_theme_enqueue_style()
 		array(),
 		filemtime(filename: BAITU_THEME_DIR . '/assets/css/main.css')
 	);
+	wp_register_style(
+		'baitu-lates-post-style',
+		BAITU_THEME_URL . '/assets/css/latest-post.css',
+		array(),
+		filemtime(filename: BAITU_THEME_DIR . '/assets/css/main.css'),
+		true
+	);
 
 }
 add_action("wp_enqueue_scripts", "baitu_theme_enqueue_style");
+
+// register all shortcodes files
+require_once( BAITU_THEME_DIR . '/includes/shortcodes/latest-posts.php' );
 
 // Elemenor widget
 function cf_elementor_addon( $widgets_manager ) {
