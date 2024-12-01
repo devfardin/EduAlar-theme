@@ -23,6 +23,8 @@ add_action("wp_enqueue_scripts", "edualar_theme_enqueue_style");
 // register all shortcodes files
 require_once( BAITU_THEME_DIR . '/includes/shortcodes/latest-posts.php' );
 
+require_once( BAITU_THEME_DIR . '/includes/setup.php' );
+
 // Elemenor widget
 function cf_elementor_addon( $widgets_manager ) {
 	require_once( BAITU_THEME_DIR . '/includes/widgets/nav-menu.php' );
