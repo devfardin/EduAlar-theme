@@ -32,8 +32,7 @@ function rander_edualar_latest_post()
                                 <div class="latest-posts__auther">
                                     <div class="latest-posts__profile_name">
                                         <?php $author_id = get_the_author_meta('ID'); ?>
-                                        <a href="<?php echo get_author_posts_url($author_id); ?>"
-                                            class='author_box latest-posts__autherInfo'>
+                                        <a class='author_box latest-posts__autherInfo'>
                                             <img class='latest-posts__author_avatar' src="<?php echo get_avatar_url($author_id) ?>"
                                                 alt="<?php echo get_the_author_meta('display_name', $author_id) ?>" />
                                             <h3 class='auther_display_name'>
