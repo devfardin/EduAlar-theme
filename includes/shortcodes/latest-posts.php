@@ -30,19 +30,17 @@ function rander_edualar_latest_post()
                             </div>
                             <div clas="latest-posts__meta_info">
                                 <div class="latest-posts__auther">
-                                   <div class="latest-posts__profile_name">
-                                   <?php $author_id = get_the_author_meta('ID'); ?>
-                                    <a href="<?php echo get_author_posts_url($author_id); ?>"
-                                        class='author_box latest-posts__autherInfo'>
-                                        <img class='latest-posts__author_avatar' src="<?php echo get_avatar_url($author_id) ?>"
-                                            alt="<?php echo get_the_author_meta('display_name', $author_id) ?>" />
-                                        <h3 class='auther_display_name'>
-                                            <?php echo get_the_author_meta('display_name', $author_id); ?>
-                                        </h3>
-                                    </a>
-
-                                   </div>
-
+                                    <div class="latest-posts__profile_name">
+                                        <?php $author_id = get_the_author_meta('ID'); ?>
+                                        <a href="<?php echo get_author_posts_url($author_id); ?>"
+                                            class='author_box latest-posts__autherInfo'>
+                                            <img class='latest-posts__author_avatar' src="<?php echo get_avatar_url($author_id) ?>"
+                                                alt="<?php echo get_the_author_meta('display_name', $author_id) ?>" />
+                                            <h3 class='auther_display_name'>
+                                                <?php echo get_the_author_meta('display_name', $author_id); ?>
+                                            </h3>
+                                        </a>
+                                    </div>
                                     <div class="latest-post__category">
                                         <?php
                                         $categories = get_the_terms(get_the_ID(), 'category');
@@ -50,21 +48,26 @@ function rander_edualar_latest_post()
                                             $first_three_categories = array_slice($categories, 0, 1, false);
                                             foreach ($first_three_categories as $category):
                                                 $link = get_term_link($category, 'category'); ?>
-                                                <a class='blog_post_category'
-                                                    href="<?php echo esc_url($link) ?>"><?php echo esc_html($category->name) ?></a>
+                                                <span class='blog_post_category'>
+                                                    <?php echo esc_html($category->name) ?>
+                                                </span>
                                                 <?php
                                             endforeach;
                                         }
                                         ?>
                                     </div>
-
+                                </div>
+                                <div class="latest-post__title">
+                                    <h1><?php echo substr(get_the_title(), 0, 70); ?>...</h1>
+                                    <a class="lates-post__read_more" href="<?php the_permalink(); ?>">
+                                        Read More
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
-
             <?php else: ?>
                 <h1 class="latest-posts__empty_mesage">No posts are available at the moment</h1>
             <?php endif; ?>
