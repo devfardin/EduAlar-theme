@@ -32,7 +32,7 @@ if ( Input::get( 'reset_key' ) && Input::get( 'user_id' ) ) {
 			<div class="tutor-form-col-12">
 				<div class="tutor-form-group">
 					<label><?php esc_html_e( 'Username or email', 'tutor' ); ?></label>
-					<input type="text" name="user_login" id="user_login" autocomplete="username">
+					<input type="text" name="user_login" id="user_login" placeholder="Username or email" autocomplete="username">
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,10 @@
  * @since 1.0.0
  */
 
+do_action('tutor_course_archive__before');
+
 use TUTOR\Input;
+
 
 ! isset( $course_filter ) ? $course_filter         = false : 0;
 ! isset( $supported_filters ) ? $supported_filters = tutor_utils()->get_option( 'supported_course_filters', array() ) : 0;

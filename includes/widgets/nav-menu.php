@@ -71,7 +71,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
             #cf-navigation .menu{
                 display: none;
                 padding: 30px;
-                gap: 15px;
+                gap: 10px;
             }
             @media all and (min-width: 1180px){
                 #cf-navigation .menu{
@@ -128,7 +128,7 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
             #cf-navigation .menu .menu-item a{
                 color:  #010101;
                 font-family: "Montserrat";
-                font-size: 18px;
+                font-size: 17px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 32px;

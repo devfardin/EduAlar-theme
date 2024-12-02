@@ -29,6 +29,8 @@ require_once( BAITU_THEME_DIR . '/includes/setup.php' );
 require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_course_single_header.php' );
 require_once( BAITU_THEME_DIR . '/includes/hooks/turot_login_before.php' );
 require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_student_register_before.php' );
+require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_course_archive_after.php' );
+require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_reset_password.php' );
 
 // Elemenor widget
 function cf_elementor_addon( $widgets_manager ) {
