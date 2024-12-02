@@ -38,6 +38,9 @@ function cf_elementor_addon( $widgets_manager ) {
 add_action( 'elementor/widgets/register', 'cf_elementor_addon' );
 
 // Hide user tool bar when user login
-if (is_user_logged_in()) {
-    show_admin_bar(false);
-}
+$current_user = wp_get_current_user();
+if (is_user_logged_in() && in_array( 'administrator', $current_user->roles ) ) {
+    show_admin_bar(true);
+} else{
+	show_admin_bar(false);
+};
