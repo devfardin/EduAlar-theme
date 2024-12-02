@@ -36,3 +36,8 @@ function cf_elementor_addon( $widgets_manager ) {
 	$widgets_manager->register( new \Elementor_nav_menu());
 }
 add_action( 'elementor/widgets/register', 'cf_elementor_addon' );
+
+// Hide user tool bar when user login
+if (is_user_logged_in()) {
+    show_admin_bar(false);
+}
