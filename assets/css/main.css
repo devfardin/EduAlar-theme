@@ -38,37 +38,39 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 @media only screen and (min-width: 1024px) {
   .elementor-column.elementor-col-100.elementor-inner-column.elementor-element.elementor-element-7ddb77a
- .elementor-widget-wrap.elementor-element-populated {
+    .elementor-widget-wrap.elementor-element-populated {
     top: -590px;
     right: -45px;
   }
 }
-.hero_heading{
-    position: relative;
+.hero_heading {
+  position: relative;
 }
-.hero_heading::before{
-    position: absolute;
-    content: "";
-    background-image: url(../images/shape-4.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.hero_heading::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/shape-4.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 214px;
+  height: 21px;
+  right: -120px;
+  bottom: -26px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 768px) {
+  .hero_heading::before {
     width: 214px;
-    height: 21px;
-    right: -120px;
-    bottom: -26px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+  }
 }
-@media only screen and (min-width:768px){
-  .hero_heading::before{
-    width: 214px;
-}
-}
-section.elementor-section.elementor-inner-section.elementor-element .courses_categories.elementor-section-boxed{
+section.elementor-section.elementor-inner-section.elementor-element
+  .courses_categories.elementor-section-boxed {
   transition: 0.4s;
 }
-section.elementor-section.elementor-inner-section.elementor-element .courses_categories.elementor-section-boxed:hover{
+section.elementor-section.elementor-inner-section.elementor-element
+  .courses_categories.elementor-section-boxed:hover {
   transform: translateY(-7px);
 }
 /* Tutor lms style */
@@ -77,16 +79,16 @@ section.elementor-section.elementor-inner-section.elementor-element .courses_cat
   font-size: 18px;
   font-weight: 500;
 }
-.tutor-course-name a{
+.tutor-course-name a {
   transition: 0.4s;
 }
-.tutor-course-name a:hover{
+.tutor-course-name a:hover {
   color: var(--e-global-color-primary) !important;
 }
-input:focus{
+input:focus {
   color: black !important;
 }
-textarea:focus{
+textarea:focus {
   color: black !important;
 }
 .circle_animation {
@@ -96,26 +98,25 @@ textarea:focus{
   top: 0;
 }
 
-
 @keyframes move-image {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-}
-100% {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /* Subscribe form style */
 .ff-el-form-control {
   padding: 13px 20px !important;
-  border: 1px solid rgba(48,146,85,0.2);
+  border: 1px solid rgba(48, 146, 85, 0.2);
   font-size: 18px;
   border-radius: 6px;
 }
-.ff-el-form-control:focus{
+.ff-el-form-control:focus {
   border-color: var(--e-global-color-primary) !important;
 }
 button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style {
@@ -127,13 +128,13 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style {
   transition: 0.3s;
 }
 button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
- background: #212121;
+  background: #212121;
 }
-.developer{
+.developer {
   color: var(--e-global-color-primary);
   transition: 0.3s;
 }
-.developer:hover{
+.developer:hover {
   color: var(--e-global-color-primary);
 }
 
@@ -154,17 +155,17 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
   font-weight: 500;
   transition: 0.3s;
 }
-.rank-math-breadcrumb p a:hover{
+.rank-math-breadcrumb p a:hover {
   color: var(--e-global-color-primary) !important;
 }
-.custom_breadcrumb:hover{
+.custom_breadcrumb:hover {
   color: var(--e-global-color-primary) !important;
 }
 
 /* Contact us page style */
 .badge_icon_wrap .elementor-icon {
   background: none !important;
-  border: 1px solid rgba(48,146,85,0.2) !important;
+  border: 1px solid rgba(48, 146, 85, 0.2) !important;
   padding: 8px !important;
 }
 
@@ -173,12 +174,12 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
   border-radius: 50%;
   padding: 10px;
 }
-.contact__action:hover{
+.contact__action:hover {
   color: var(--e-global-color-primary);
 }
 
 .contact_us_action_icon .elementor-icon-box-icon {
-  border: 1px solid rgba(48,146,85,0.2);
+  border: 1px solid rgba(48, 146, 85, 0.2);
   padding: 15px;
   border-radius: 50%;
   display: inline-flex !important;
@@ -188,7 +189,7 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
   background: white;
   padding: 20px;
   border-radius: 50%;
-  border: 1px solid rgba(48,146,85,0.2) !important;
+  border: 1px solid rgba(48, 146, 85, 0.2) !important;
 }
 .contact_us_action_icon:hover .elementor-icon.elementor-animation- {
   background: var(--e-global-color-primary);
@@ -196,15 +197,22 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
 }
 
 /* Login form style */
-.tutor-login-wrap, #tutor-registration-wrap {
+.tutor-login-wrap,
+#tutor-registration-wrap {
   max-width: 700px;
   margin: 0px auto;
   padding: 40px 0 32px 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-@media only screen and (min-width:768px){
-  .tutor-login-wrap, #tutor-registration-wrap {
+@media only screen and (min-width: 768px) {
+  .tutor-login-wrap,
+  #tutor-registration-wrap {
     margin: 50px auto;
   }
+}
+
+/* Tutor Dashboard style */
+.tutor-wrap.tutor-wrap-parent.tutor-dashboard.tutor-frontend-dashboard.tutor-dashboard-student{
+  margin-top: 150px;
 }

@@ -182,17 +182,19 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
                 }
             }
             .cf-primary__btn a {
-                background: #298D06;
+                background: white;
+                border: 1px solid var(--e-global-color-primary);
                 display: inline-block !important;
                 text-align: center;
-                padding: 9px 30px;
-                border-radius: 100px;
-                color: #fff !important;
-                font-weight: 500 !important;
-                transition:all 0.3s;
+                padding: 10px 30px;
+                border-radius: 10px;
+                color: #010101;
+                font-weight: 500;
+                transition:all 0.4s;
             }
             .cf-primary__btn a:hover{
-                background: #85B303;                
+                background: var(--e-global-color-primary);
+                color: #ffffff !important;            
             }
 			
             @media all and (min-width: 1180px){

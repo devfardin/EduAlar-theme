@@ -3,7 +3,7 @@ function tutor_student_register_form_before()
 {
     ?>
     <div>
-        <?php echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(656);
+        <?php echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(677);
         ?>
     </div>
     <?php
