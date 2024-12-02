@@ -25,6 +25,11 @@ require_once( BAITU_THEME_DIR . '/includes/shortcodes/latest-posts.php' );
 
 require_once( BAITU_THEME_DIR . '/includes/setup.php' );
 
+// ALL Tutor hooks Here
+require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_course_single_header.php' );
+require_once( BAITU_THEME_DIR . '/includes/hooks/turot_login_before.php' );
+require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_student_register_before.php' );
+
 // Elemenor widget
 function cf_elementor_addon( $widgets_manager ) {
 	require_once( BAITU_THEME_DIR . '/includes/widgets/nav-menu.php' );

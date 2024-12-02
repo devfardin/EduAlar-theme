@@ -86,6 +86,9 @@ section.elementor-section.elementor-inner-section.elementor-element .courses_cat
 input:focus{
   color: black !important;
 }
+textarea:focus{
+  color: black !important;
+}
 .circle_animation {
   animation: move-image 4s ease-in-out infinite;
   position: absolute;
@@ -154,6 +157,9 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
 .rank-math-breadcrumb p a:hover{
   color: var(--e-global-color-primary) !important;
 }
+.custom_breadcrumb:hover{
+  color: var(--e-global-color-primary) !important;
+}
 
 /* Contact us page style */
 .badge_icon_wrap .elementor-icon {
@@ -187,4 +193,18 @@ button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style:hover {
 .contact_us_action_icon:hover .elementor-icon.elementor-animation- {
   background: var(--e-global-color-primary);
   color: white !important;
+}
+
+/* Login form style */
+.tutor-login-wrap, #tutor-registration-wrap {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 40px 0 32px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+}
+@media only screen and (min-width:768px){
+  .tutor-login-wrap, #tutor-registration-wrap {
+    margin: 50px auto;
+  }
 }
