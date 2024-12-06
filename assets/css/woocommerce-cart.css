@@ -1,0 +1,178 @@
+/* Woocommerce cart page style */
+.woocommerce .tutor-cart-empty-state {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid var(--tutor-border-color);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+  }
+  .wc-empty-cart-message,
+  .cart-empty.woocommerce-info {
+    display: none;
+  }
+  .woocommerce-cart-form .cart-summary h2, .cart_total_wrapper  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+    margin-bottom: 20px;
+  }
+  
+  .shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* .woocommerce-cart-form__cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  } */
+  .woocommerce-cart-form__cart-item_info {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    border: 1px solid #F7FAFC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  @media only screen and (min-width:768px){
+    .woocommerce-cart-form__cart-item_info{
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+    }
+  }
+  .woocommerce-cart-form__cart-item_info .product-thumbnail a img {
+    width: 200px !important;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .woocommerce_cart_items_title_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+  }
+  @media only screen and (min-width:768px){
+    .woocommerce_cart_items_title_price{
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  .woocommerce_cart_items_title_price .product-name a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #212832;
+    transition: all 0.3s;
+  }
+  .woocommerce_cart_items_title_price .product-name a:hover{
+    color: var(--e-global-color-primary);
+  }
+  .product-remove a {
+    color:var(--e-global-color-primary) !important;
+  }
+  
+  .product-remove a::after {
+    width: 100%;
+    height: 100%;
+    content: "Remove";
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--e-global-color-primary);
+  }
+  .woocommerce a.remove{
+    color: var(--e-global-color-primary) !important;
+  }
+  .woocommerce a.remove:hover {
+    color: var(--e-global-color-primary) !important;
+    background: none !important;
+    text-decoration: none;
+  }
+  .actions.woocommerce_cart__action {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 15px;
+    background: #EEFBF3;
+    border-radius: 10px;
+  }
+  @media only screen and (min-width:768px){
+    .actions.woocommerce_cart__action {
+      flex-direction: row;
+    }
+  }
+  .actions.woocommerce_cart__action .coupon {
+    display: flex;
+    gap: 10px;
+  }
+  .actions.woocommerce_cart__action button {
+    background: var(--e-global-color-primary) !important;
+  }
+  
+  .woocommerce_cart_product_summery_price_wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 8fr);
+    gap:30px;
+    width: 100%;
+  } 
+  @media only screen and (min-width:768px){
+    .woocommerce_cart_product_summery_price_wrapper {
+      grid-template-columns: repeat(8, 1fr);
+    } 
+  }
+  .woocommerce-cart-form{
+    grid-column: span 8; 
+  }
+  @media only screen and (min-width:768px){
+    .woocommerce-cart-form{
+      grid-column: span 5; 
+    }
+  }
+  .cart-collaterals_total{
+    grid-column: span 8; 
+  } 
+  @media only screen and (min-width:768px){
+    .cart-collaterals_total{
+      grid-column: span 3; 
+    } 
+  }
+  
+  .cart-collaterals_total .cart_totals {
+    gap: 10px;
+    border: 1px solid #F7FAFC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  @media only screen and (min-width:768px){
+    .cart-collaterals_total .cart_totals{
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+  .wc-proceed-to-checkout {
+    padding-bottom: 5px !important;
+  }
+  
+  .wc-proceed-to-checkout a {
+    margin: 0 !important;
+  }
+  .wc-proceed-to-checkout a {
+    background: var(--e-global-color-primary) !important;
+  }
+  

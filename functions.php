@@ -16,6 +16,13 @@ function edualar_theme_enqueue_style()
 		array(),
 		filemtime(filename: BAITU_THEME_DIR . '/assets/css/main.css'),
 	);
+	// Register style for woocommerce cart
+	wp_register_style(
+		'edualar-woocommerce-cart-style',
+		BAITU_THEME_URL . '/assets/css/woocommerce-cart.css',
+		array(),
+		filemtime(filename: BAITU_THEME_DIR . '/assets/css/woocommerce-cart.css'),
+	);
 
 }
 add_action("wp_enqueue_scripts", "edualar_theme_enqueue_style");
@@ -24,6 +31,11 @@ add_action("wp_enqueue_scripts", "edualar_theme_enqueue_style");
 require_once( BAITU_THEME_DIR . '/includes/shortcodes/latest-posts.php' );
 
 require_once( BAITU_THEME_DIR . '/includes/setup.php' );
+// require_once( BAITU_THEME_DIR . '/includes/woocommerce/checkout.php' );
+
+require_once get_stylesheet_directory() . '/includes/woocommerce/checkout.php';
+
+
 
 // ALL Tutor hooks Here
 require_once( BAITU_THEME_DIR . '/includes/hooks/tutor_course_single_header.php' );
@@ -59,8 +71,17 @@ function add_some_links_dashboard($links){
 	$links['custom_link'] = [
 		"title" =>	__('Cart', 'tutor'),
 		"url" => "/cart",
-		"icon" => "tutor-icon-cart",
+		"icon" => "tutor-dashboard-menu-item-icon",
 
 	];
 	return $links;
+}
+
+
+
+add_filter( 'woocommerce_billing_fields', 'wc_unrequire_wc_phone_field');
+function wc_unrequire_wc_phone_field( $fields ) {
+$fields['billing_email']['required'] = false;
+$fields['billing_first_name']['required'] = false;
+return $fields;
 }
