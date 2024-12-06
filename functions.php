@@ -76,12 +76,3 @@ function add_some_links_dashboard($links){
 	];
 	return $links;
 }
-
-
-
-add_filter( 'woocommerce_billing_fields', 'wc_unrequire_wc_phone_field');
-function wc_unrequire_wc_phone_field( $fields ) {
-$fields['billing_email']['required'] = false;
-$fields['billing_first_name']['required'] = false;
-return $fields;
-}
