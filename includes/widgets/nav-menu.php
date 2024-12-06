@@ -117,13 +117,15 @@ class Elementor_nav_menu extends \Elementor\Widget_Base {
             #cf-navigation.show--mobile-navigation .menu{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
+                width: 100vw;
                 position: absolute;
                 top: 49px;
-                left: 0;
+                right: -15px;
                 z-index: 999;
                 background: #ffffff;
                 transition: all 0.4s;
+                overflow: hidden;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             }
             #cf-navigation .menu .menu-item a{
                 color:  #010101;

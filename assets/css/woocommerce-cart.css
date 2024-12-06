@@ -26,12 +26,6 @@
     flex-direction: column;
     gap: 20px;
   }
-  
-  /* .woocommerce-cart-form__cart-item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  } */
   .woocommerce-cart-form__cart-item_info {
     display: flex;
     gap: 10px;
